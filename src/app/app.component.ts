@@ -14,6 +14,6 @@ export class AppComponent  {
     this.user.name = 'Payel Mahapatra';
     this.user.title = 'Software Developer';
     this.user.address = 'Kolkata';
-    this.user.phone = ['123-456-789', '852-741-963'];
+    this.user.phone = ['123-456-789', '852-741-963', '896-345-1234'];
   }
 }
