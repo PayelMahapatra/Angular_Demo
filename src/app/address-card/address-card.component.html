@@ -1,0 +1,14 @@
+<div>
+  <h2> {{ user.name }} </h2>
+  <h4> {{ user.title }} </h4>
+  <button *ngIf='isCollapse' (click)='toggleCollapse()'>Expand</button>
+  <button *ngIf='!isCollapse' (click)='toggleCollapse()'>Collapse</button>
+  <div *ngIf='!isCollapse'>
+    <p> {{ user.address }} </p>
+    <div *ngIf='user.phone.length'>
+      <p *ngFor='let item of user.phone'> {{ item }} </p>
+    </div>
+  </div>
+</div>
+<input type='text' [(ngModel)]='inputText'>
+{{ inputText }}
