@@ -3,7 +3,7 @@
   <h4> {{ user.title }} </h4>
   <button *ngIf='isCollapse' (click)='toggleCollapse()'>Expand</button>
   <button *ngIf='!isCollapse' (click)='toggleCollapse()'>Collapse</button>
-  <div *ngIf='!isCollapse'>
+  <div class='address' *ngIf='!isCollapse'>
     <p> {{ user.address }} </p>
     <div *ngIf='user.phone.length'>
       <p *ngFor='let item of user.phone'> {{ item }} </p>

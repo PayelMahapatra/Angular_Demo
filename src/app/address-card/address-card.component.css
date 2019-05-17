@@ -1,0 +1,9 @@
+.address{
+  border-style : ridge;  
+  margin : 5px;
+  padding-left : 3px;
+}
+
+button{
+  margin : 2px;
+}
