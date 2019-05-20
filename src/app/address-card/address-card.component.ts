@@ -15,6 +15,10 @@ export class AddressCardComponent implements OnInit {
   toggleCollapse(){
     this.isCollapse = !this.isCollapse;
   }
+  myBtnClicked(event){
+    alert('Button is clicked');
+    console.log(event);
+  }
   constructor() { }
 
   ngOnInit() {

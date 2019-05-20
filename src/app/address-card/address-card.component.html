@@ -10,5 +10,17 @@
     </div>
   </div>
 </div>
-<input type='text' [(ngModel)]='inputText'>
-{{ inputText }}
+<div>
+  <button (click)='myBtnClicked($event)'> Click </button>
+</div>
+<div>
+  <input type='text' [(ngModel)]='inputText'>
+  {{ inputText }}
+</div>
+<div>
+  <span *ngIf="isCollapse; then condition2 else condition1">
+    Condition is valid.
+  </span>
+  <ng-template #condition1>Condition is valid</ng-template>
+  <ng-template #condition2>Condition is invalid</ng-template>
+</div>
